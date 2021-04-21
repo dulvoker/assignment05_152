@@ -5,7 +5,9 @@
 
 
 size_t position::hash( ) const 
-{ } 
+{
+    return this->x * 1023 + this->y;
+}
 
 bool operator == ( position p1, position p2 )
 {

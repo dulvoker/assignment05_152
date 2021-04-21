@@ -9,8 +9,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 1">
+      <change beforePath="$PROJECT_DIR$/submit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/submit.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,14 +43,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619028316847</updated>
-      <workItem from="1619028318203" duration="483000" />
+      <workItem from="1619028318203" duration="821000" />
     </task>
+    <task id="LOCAL-00001" summary="task 1">
+      <created>1619036343009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619036343009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="task 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619036309995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1619036309995" />
     <state x="594" y="351" width="419" height="198" key="Github.ShareDialog" timestamp="1619028472603">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -58,5 +75,9 @@
       <screen x="0" y="25" width="1440" height="794" />
     </state>
     <state x="558" y="159" key="Github.UntrackedFilesDialog/0.25.1440.794@0.25.1440.794" timestamp="1619028503183" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619036383603">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619036383603" />
   </component>
 </project>
