@@ -8,7 +8,9 @@ size_t position::hash( ) const
 { } 
 
 bool operator == ( position p1, position p2 )
-{ }
+{
+    return (p1.x == p2.x && p1.y == p2.y);
+}
 
 position operator + ( position p1, position p2 )
 { 
