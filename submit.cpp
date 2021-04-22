@@ -24,11 +24,29 @@ position operator + ( position p1, position p2 )
 
 std::pair< unsigned int*, bool >
 map::insert_norehash( position p, unsigned int i )
-{ }
-
+{
+    std::pair< unsigned int *, bool > ret_type;
+    for (auto k : buckets[p.hash()]){
+        if (p.x == k.first.x && p.y == k.first.y) {
+            ret_type.first = &k.second;
+            ret_type.second = false;
+            return ret_type;
+        }
+    }
+    buckets[p.hash()].push_back(std::make_pair( p, i ));
+    for (auto k : buckets[p.hash()]){
+        if (p.x == k.first.x && p.y == k.first.y) {
+            map_size++;
+            ret_type.first = &k.second;
+            ret_type.second = true;
+            return ret_type;
+        }
+    }
+}
 
 std::ostream& map::print( std::ostream& out ) const
 { }
+
 
 
 const unsigned int* map::lookup( position p ) const

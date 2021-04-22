@@ -9,7 +9,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 1">
+    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 2 ( 1023x + y)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/submit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/submit.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619028316847</updated>
-      <workItem from="1619028318203" duration="821000" />
+      <workItem from="1619028318203" duration="5364000" />
     </task>
     <task id="LOCAL-00001" summary="task 1">
       <created>1619036343009</created>
@@ -52,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619036343009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="task 2 ( 1023x + y)">
+      <created>1619036621250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619036621250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,13 +68,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
+    <MESSAGE value="task 2 ( 1023x + y)" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 2 ( 1023x + y)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619036309995">
+    <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619094186389">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1619036309995" />
+    <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1619094186389" />
     <state x="594" y="351" width="419" height="198" key="Github.ShareDialog" timestamp="1619028472603">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -75,9 +84,9 @@
       <screen x="0" y="25" width="1440" height="794" />
     </state>
     <state x="558" y="159" key="Github.UntrackedFilesDialog/0.25.1440.794@0.25.1440.794" timestamp="1619028503183" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619036383603">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619036626038">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619036383603" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619036626038" />
   </component>
 </project>
