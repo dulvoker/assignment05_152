@@ -53,7 +53,7 @@ std::ostream& map::print( std::ostream& out ) const
         out<<"Bucket["<<i<<"] = ";
 
         for (auto z : k) {
-            out<<"("<<k.size()<<")"<<"{"<<z.first<<" "<<z.second<<"}";
+            out<<"( {"<<z.first.x<<","<<z.first.y<<"}, "<<z.second<<" ) ";
         }
         out <<std::endl;
         i++;

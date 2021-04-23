@@ -92,10 +92,10 @@ int main( int argc, char * argv [ ] )
 {
     map test2;
     position q(4,5);
-    position w(3,5);
-    position e(4,5);
-    position r(4,5);
-    position t(4,5);
+    position w(3,6);
+    position e(4,7);
+    position r(4,8);
+    position t(4,9);
     test2.insert_norehash(q,5);
     test2.insert_norehash(w,6);
     test2.insert_norehash(e,7);
