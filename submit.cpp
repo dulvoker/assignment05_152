@@ -50,11 +50,12 @@ std::ostream& map::print( std::ostream& out ) const
 {
     int i = 0;
     for (auto k : buckets) {
-        out<<"Bucket["<<i<<"] = {";
+        out<<"Bucket["<<i<<"] = ";
+
         for (auto z : k) {
-            out<<z.first;
+            out<<"("<<k.size()<<")"<<"{"<<z.first<<" "<<z.second<<"}";
         }
-        out << "}"<<std::endl;
+        out <<std::endl;
         i++;
     }
     return out;

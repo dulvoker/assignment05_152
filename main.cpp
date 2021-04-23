@@ -92,7 +92,15 @@ int main( int argc, char * argv [ ] )
 {
     map test2;
     position q(4,5);
-    std::cout<<test2.insert_norehash(q,5)<<std::endl;
+    position w(3,5);
+    position e(4,5);
+    position r(4,5);
+    position t(4,5);
+    test2.insert_norehash(q,5);
+    test2.insert_norehash(w,6);
+    test2.insert_norehash(e,7);
+    test2.insert_norehash(r,8);
+    test2.insert_norehash(t,9);
     std::cout<<test2;
     return 0;
 
