@@ -9,7 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 3 (norehas()) ;">
+    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 3 (norehas()) ; // I have corrected the mistake with the index of the hash table.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/submit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/submit.cpp" afterDir="false" />
@@ -45,7 +45,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619028316847</updated>
-      <workItem from="1619028318203" duration="7489000" />
+      <workItem from="1619028318203" duration="9030000" />
+      <workItem from="1619168301396" duration="2980000" />
     </task>
     <task id="LOCAL-00001" summary="task 1">
       <created>1619036343009</created>
@@ -68,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619099303975</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task 3 (norehas()) ; // I have corrected the mistake with the index of the hash table.">
+      <created>1619121902399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619121902399</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,7 +86,8 @@
     <MESSAGE value="task 1" />
     <MESSAGE value="task 2 ( 1023x + y)" />
     <MESSAGE value="task 3 (norehas()) ;" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 3 (norehas()) ;" />
+    <MESSAGE value="task 3 (norehas()) ; // I have corrected the mistake with the index of the hash table." />
+    <option name="LAST_COMMIT_MESSAGE" value="task 3 (norehas()) ; // I have corrected the mistake with the index of the hash table." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619094186389">
@@ -93,9 +102,9 @@
       <screen x="0" y="25" width="1440" height="794" />
     </state>
     <state x="558" y="159" key="Github.UntrackedFilesDialog/0.25.1440.794@0.25.1440.794" timestamp="1619028503183" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619099309541">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619121906164">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619099309541" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619121906164" />
   </component>
 </project>

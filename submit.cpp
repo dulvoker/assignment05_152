@@ -28,7 +28,7 @@ map::insert_norehash( position p, unsigned int i )
     std::pair< unsigned int *, bool > ret_type;
     size_t term = abs((int) p.hash())  % buckets.size();
     for (auto k : buckets[term]){
-        if (p.x == k.first.x && p.y == k.first.y) {
+        if (p == k.first) {
             ret_type.first = &k.second;
             ret_type.second = false;
             return ret_type;
@@ -36,7 +36,7 @@ map::insert_norehash( position p, unsigned int i )
     }
     buckets[term].push_back(std::make_pair( p, i ));
     for (auto k : buckets[term]){
-        if (p.x == k.first.x && p.y == k.first.y) {
+        if (p == k.first) {
             map_size++;
             ret_type.first = &k.second;
             ret_type.second = true;
@@ -45,10 +45,20 @@ map::insert_norehash( position p, unsigned int i )
     }
 }
 
+
 std::ostream& map::print( std::ostream& out ) const
-{ }
-
-
+{
+    int i = 0;
+    for (auto k : buckets) {
+        out<<"Bucket["<<i<<"] = {";
+        for (auto z : k) {
+            out<<z.first;
+        }
+        out << "}"<<std::endl;
+        i++;
+    }
+    return out;
+}
 
 const unsigned int* map::lookup( position p ) const
 { }
