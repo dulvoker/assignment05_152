@@ -88,35 +88,32 @@ void test(){
 #endif
 }
 
+
 int main( int argc, char * argv [ ] )
 {
 
     map test;
-    auto res = test. insert_norehash( { 0,0 }, 1 );
-    res = test. insert_norehash( {0,0}, 0 );
-    test. insert_norehash( {0,1}, 2 );
-    test. insert_norehash( {0,3}, 3 );
-    test. insert_norehash( {0,2}, 4 );
-    test. insert_norehash( {0,4}, 5 );
-    test. insert_norehash( {0,5}, 6 );
-    test. insert_norehash( {0,6}, 7 );
+    position a(1,1);
+    position b(2,1);
+    position c(3,1);
+    position d(4,1);
+    position e(5,1);
+    position f(6,1);
+    position g(7,1);
 
-    *test.insert_norehash({0,1}, 4).first = 12123123;
+    test.insert_norehash(a,1);
+    test.insert_norehash(b,2);
+    test.insert_norehash(c,3);
+    test.insert_norehash(d,4);
+    test.insert_norehash(e,5);
+    test.insert_norehash(f,6);
 
     std::cout << test ;
-//    map test2;
-//    position q(4,5);
-//    position w(8,10);
-//    position e(3,2);
-//    position d(5,1);
-//    position r(1,5);
-//    test2.insert_norehash(q, 12);
-//    test2.insert_norehash(w, 13);
-//    test2.insert_norehash(e, 14);
-//    test2.insert_norehash(r, 15);
-////    std::cout<<test2.insert_norehash(d, 16) ;
-////    *test2.insert_norehash(d,16).first = 23;
-//    std::cout<<test2;
+
+    std::cout << "Clearing!!!.." << std::endl;
+
+    std::cout << test ;
+
     return 0;
 
 }

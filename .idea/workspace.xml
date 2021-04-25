@@ -27,7 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)">
+    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/submit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/submit.cpp" afterDir="false" />
@@ -67,7 +67,7 @@
       <workItem from="1619168301396" duration="10156000" />
       <workItem from="1619253410816" duration="819000" />
       <workItem from="1619328957921" duration="505000" />
-      <workItem from="1619355304110" duration="2379000" />
+      <workItem from="1619355304110" duration="5527000" />
     </task>
     <task id="LOCAL-00001" summary="task 1">
       <created>1619036343009</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619174711174</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS">
+      <created>1619358767689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619358767689</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +151,8 @@
     <MESSAGE value="task 4 (norehas()) ; // basic printing principles" />
     <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3" />
     <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)" />
+    <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619094186389">
@@ -163,13 +171,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619356326676" />
-    <state x="522" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619179275641">
+    <state x="522" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619358737550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="522" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1619179275641" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1619180485887">
+    <state x="522" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1619358737550" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1619359107212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1619180485887" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1619359107212" />
   </component>
 </project>

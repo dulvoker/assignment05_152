@@ -78,7 +78,6 @@ unsigned int* map::lookup( position p )
     size_t term = abs((int) p.hash())  % buckets.size();
     for (auto &k : buckets[term]) {
         if (p == k.first) {
-            std::cout<<k.second<<std::endl;
             unsigned int* x = &k.second;
             return x;
         }
@@ -90,16 +89,25 @@ unsigned int* map::lookup( position p )
 
 bool map::erase( position p )
 {
-    size_t term = p.hash();
-    for (auto each : buckets[term]) {
-        if (p == each.first) {
+    if (lookup(p) != nullptr){
+        size_t term = abs((int) p.hash())  % buckets.size();
+        for (auto &k : buckets[term]) {
+            if (p == k.first) {
+                buckets[term].remove(k);
+                map_size--;
+                return 1;
+            }
         }
-    };
+    }
+    return 0;
 }
 
 
 void map::clear( )
-{ }
+{
+    map_size = 0;
+
+}
 
 
 void map::rehash( size_t newbucketsize )
