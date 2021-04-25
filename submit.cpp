@@ -19,15 +19,13 @@ position operator + ( position p1, position p2 )
    return position( p1.x + p2.x, p1.y + p2.y );
 }
 
-///////////////////////////////////////
-
 
 std::pair< unsigned int*, bool >
 map::insert_norehash( position p, unsigned int i )
 {
     std::pair< unsigned int *, bool > ret_type;
     size_t term = abs((int) p.hash())  % buckets.size();
-    for (auto k : buckets[term]){
+    for (auto &k : buckets[term]) {
         if (p == k.first) {
             ret_type.first = &k.second;
             ret_type.second = false;
@@ -35,7 +33,7 @@ map::insert_norehash( position p, unsigned int i )
         }
     }
     buckets[term].push_back(std::make_pair( p, i ));
-    for (auto k : buckets[term]){
+    for (auto &k : buckets[term]) {
         if (p == k.first) {
             map_size++;
             ret_type.first = &k.second;
@@ -44,6 +42,7 @@ map::insert_norehash( position p, unsigned int i )
         }
     }
 }
+
 
 
 std::ostream& map::print( std::ostream& out ) const
@@ -62,15 +61,41 @@ std::ostream& map::print( std::ostream& out ) const
 }
 
 const unsigned int* map::lookup( position p ) const
-{ }
+{
+    size_t term = abs((int) p.hash())  % buckets.size();
+    for (auto &k : buckets[term]) {
+        if (p == k.first) {
+            return &k.second;
+        }
+    }
+    return nullptr;
+
+}
 
 
 unsigned int* map::lookup( position p )
-{ }
+{
+    size_t term = abs((int) p.hash())  % buckets.size();
+    for (auto &k : buckets[term]) {
+        if (p == k.first) {
+            std::cout<<k.second<<std::endl;
+            unsigned int* x = &k.second;
+            return x;
+        }
+    }
+    return nullptr;
+
+}
 
 
 bool map::erase( position p )
-{ }
+{
+    size_t term = p.hash();
+    for (auto each : buckets[term]) {
+        if (p == each.first) {
+        }
+    };
+}
 
 
 void map::clear( )

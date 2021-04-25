@@ -90,18 +90,33 @@ void test(){
 
 int main( int argc, char * argv [ ] )
 {
-    map test2;
-    position q(4,5);
-    position w(3,6);
-    position e(4,7);
-    position r(4,8);
-    position t(4,9);
-    test2.insert_norehash(q,5);
-    test2.insert_norehash(w,6);
-    test2.insert_norehash(e,7);
-    test2.insert_norehash(r,8);
-    test2.insert_norehash(t,9);
-    std::cout<<test2;
+
+    map test;
+    auto res = test. insert_norehash( { 0,0 }, 1 );
+    res = test. insert_norehash( {0,0}, 0 );
+    test. insert_norehash( {0,1}, 2 );
+    test. insert_norehash( {0,3}, 3 );
+    test. insert_norehash( {0,2}, 4 );
+    test. insert_norehash( {0,4}, 5 );
+    test. insert_norehash( {0,5}, 6 );
+    test. insert_norehash( {0,6}, 7 );
+
+    *test.insert_norehash({0,1}, 4).first = 12123123;
+
+    std::cout << test ;
+//    map test2;
+//    position q(4,5);
+//    position w(8,10);
+//    position e(3,2);
+//    position d(5,1);
+//    position r(1,5);
+//    test2.insert_norehash(q, 12);
+//    test2.insert_norehash(w, 13);
+//    test2.insert_norehash(e, 14);
+//    test2.insert_norehash(r, 15);
+////    std::cout<<test2.insert_norehash(d, 16) ;
+////    *test2.insert_norehash(d,16).first = 23;
+//    std::cout<<test2;
     return 0;
 
 }
