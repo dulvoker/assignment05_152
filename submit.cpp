@@ -6,7 +6,7 @@
 
 size_t position::hash( ) const 
 {
-    return abs(this->x * (1023) + this->y);
+    return (this->x * (1023) + this->y);
 }
 
 bool operator == ( position p1, position p2 )
@@ -24,23 +24,27 @@ std::pair< unsigned int*, bool >
 map::insert_norehash( position p, unsigned int i )
 {
     std::pair< unsigned int *, bool > ret_type;
-    size_t term = abs((int) p.hash())  % buckets.size();
+    size_t term = abs((int) p.hash())  % getnrbuckets();
     for (auto &k : buckets[term]) {
         if (p == k.first) {
             ret_type.first = &k.second;
             ret_type.second = false;
             return ret_type;
         }
+
     }
     buckets[term].push_back(std::make_pair( p, i ));
+    map_size++;
     for (auto &k : buckets[term]) {
         if (p == k.first) {
-            map_size++;
             ret_type.first = &k.second;
             ret_type.second = true;
             return ret_type;
         }
     }
+    ret_type.first = nullptr;
+    ret_type.second = false;
+    return ret_type;
 }
 
 
@@ -114,23 +118,44 @@ void map::rehash( size_t newbucketsize )
 {
     if( newbucketsize < 4 ) newbucketsize = 4;
     std::vector< buckettype > newbuckets( newbucketsize );
-    for (auto k : buckets) {
+    size_t perm = map_size;
+    std::swap(newbuckets, buckets);
+    for (auto k : newbuckets) {
         for (auto z : k) {
-            newbuckets[z.first.hash() % newbucketsize].push_back(std::make_pair( z.first, z.second ));
+            insert_norehash(z.first,z.second);
         }
     }
-    buckets.clear();
-    std::swap(newbuckets, buckets);
+    map_size = perm;
+    newbuckets.clear();
 }
 
 
 std::pair< unsigned int* , bool >
 map::insert_rehash( position p, unsigned int i )
-{ }
+{
+    std::pair< unsigned int* , bool >  ret_type;
+    ret_type = insert_norehash( p, i ) ;
+    if(ret_type.second) {
+        if(map_size/buckets.size() > max_load_factor) {
+            rehash(buckets.size() * 2);
+            ret_type.first = lookup(p);
+            ret_type.second = true;
+            return ret_type;
+        }
+    } else  {
+        ret_type.first = lookup(p);
+        ret_type.second = false;
+        return ret_type;
+    }
+}
 
 
 map::map( std::initializer_list< std::pair< position, unsigned int >> init )
-   : map( )
-{ }
+        : map( )
+{
+    for(auto k : init){
+        insert_rehash(k.first, k.second);
+    }
+}
 
 

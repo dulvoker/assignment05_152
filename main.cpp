@@ -23,6 +23,7 @@ void test(){
 
     timetable tab( std::string( "set" ));
 
+
     for( size_t s = 1000; s < 8 * 1000 * 1000; s = 2 * s )
     {
         map somemap1;
@@ -42,12 +43,16 @@ void test(){
             }
         }
 
+
         somemap1. printstatistics( std::cout );
+
 
         auto somemap2 = somemap1;
 
-        if( nr != somemap1. size( ))
+        if( nr != somemap1. size( )){
+//            std::cout << nr << " " << somemap1.size()<< std::endl;
             throw std::runtime_error( "counting went wrong 1" );
+        }
 
         // We go through someset2, in order to make someset1 empty.
 
@@ -69,6 +74,7 @@ void test(){
         tab. insert( s, tt. time( ));
     }
 
+
     std::cout << tab << "\n";
     std::cout << "totaltime " << tab. totaltime( ) << "\n";
 
@@ -89,35 +95,10 @@ void test(){
 }
 
 
+
 int main( int argc, char * argv [ ] )
 {
-
-    map test;
-    position a(1,1);
-    position b(2,1);
-    position c(3,1);
-    position d(4,2);
-    position e(5,1);
-    position f(6,1);
-    position g(7,1);
-
-    test.insert_norehash(a,1);
-    test.insert_norehash(b,2);
-    test.insert_norehash(c,3);
-    test.insert_norehash(d,4);
-    test.insert_norehash(e,5);
-    test.insert_norehash(f,6);
-    test.insert_norehash(g,7);
-
-    std::cout << test << std::endl;
-
-    std::cout << "Rehashing!!!.." << std::endl;
-    test.rehash(12);
-
-    std::cout << test.getnrbuckets() << std::endl;
-
-
-
+    test();
     return 0;
 
 }
