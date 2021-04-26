@@ -96,7 +96,7 @@ int main( int argc, char * argv [ ] )
     position a(1,1);
     position b(2,1);
     position c(3,1);
-    position d(4,1);
+    position d(4,2);
     position e(5,1);
     position f(6,1);
     position g(7,1);
@@ -107,12 +107,16 @@ int main( int argc, char * argv [ ] )
     test.insert_norehash(d,4);
     test.insert_norehash(e,5);
     test.insert_norehash(f,6);
+    test.insert_norehash(g,7);
 
-    std::cout << test ;
+    std::cout << test << std::endl;
 
-    std::cout << "Clearing!!!.." << std::endl;
+    std::cout << "Rehashing!!!.." << std::endl;
+    test.rehash(12);
 
-    std::cout << test ;
+    std::cout << test.getnrbuckets() << std::endl;
+
+
 
     return 0;
 

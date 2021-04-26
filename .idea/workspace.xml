@@ -27,7 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS">
+    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="every task until 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/submit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/submit.cpp" afterDir="false" />
@@ -67,7 +67,7 @@
       <workItem from="1619168301396" duration="10156000" />
       <workItem from="1619253410816" duration="819000" />
       <workItem from="1619328957921" duration="505000" />
-      <workItem from="1619355304110" duration="5527000" />
+      <workItem from="1619355304110" duration="12980000" />
     </task>
     <task id="LOCAL-00001" summary="task 1">
       <created>1619036343009</created>
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619358767689</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="every task until 8">
+      <created>1619368970824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619368970824</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +159,8 @@
     <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3" />
     <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)" />
     <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS" />
+    <MESSAGE value="every task until 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="every task until 8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619094186389">
@@ -167,10 +175,10 @@
       <screen x="0" y="25" width="1440" height="794" />
     </state>
     <state x="558" y="159" key="Github.UntrackedFilesDialog/0.25.1440.794@0.25.1440.794" timestamp="1619028503183" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619356326676">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1619368976711">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619356326676" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1619368976711" />
     <state x="522" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619358737550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

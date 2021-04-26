@@ -50,7 +50,6 @@ std::ostream& map::print( std::ostream& out ) const
     int i = 0;
     for (auto k : buckets) {
         out<<"Bucket["<<i<<"] = ";
-
         for (auto z : k) {
             out<<"( {"<<z.first.x<<","<<z.first.y<<"}, "<<z.second<<" ) ";
         }
@@ -103,15 +102,26 @@ bool map::erase( position p )
 }
 
 
-void map::clear( )
-{
-    map_size = 0;
+void map::clear( ) {
 
+    for(size_t term = 0; term < buckets.size(); term ++){
+        buckets[term].clear();
+    }
+    map_size = 0;
 }
 
-
 void map::rehash( size_t newbucketsize )
-{ }
+{
+    if( newbucketsize < 4 ) newbucketsize = 4;
+    std::vector< buckettype > newbuckets( newbucketsize );
+    for (auto k : buckets) {
+        for (auto z : k) {
+            newbuckets[z.first.hash() % newbucketsize].push_back(std::make_pair( z.first, z.second ));
+        }
+    }
+    buckets.clear();
+    std::swap(newbuckets, buckets);
+}
 
 
 std::pair< unsigned int* , bool >
