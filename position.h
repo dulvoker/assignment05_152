@@ -3,21 +3,24 @@
 #define POSITION_INCLUDED  1
 
 #include <iostream>
+#include <cmath>
 
 struct position
 {
    int x;
-   int y; 
+   int y;
 
-   position( ) 
+   position()
       : x(0), y(0)
+   {
+   }
+
+   position( int x, int y )
+      : x(x), y(y)
    { }
 
-   position( int x, int y )  
-      : x(x), y(y)
-   { }  
-
    size_t hash( ) const;
+
 
 };
 

@@ -1,12 +1,11 @@
-
 #include "map.h"
 #include "position.h"
 #include "labyrinth.h"
 
 
-size_t position::hash( ) const 
+size_t position::hash( ) const
 {
-    return (this->x * (1023) + this->y);
+    return abs(this->x * (1023) + this->y);
 }
 
 bool operator == ( position p1, position p2 )
@@ -15,8 +14,8 @@ bool operator == ( position p1, position p2 )
 }
 
 position operator + ( position p1, position p2 )
-{ 
-   return position( p1.x + p2.x, p1.y + p2.y );
+{
+    return position( p1.x + p2.x, p1.y + p2.y );
 }
 
 
@@ -24,27 +23,23 @@ std::pair< unsigned int*, bool >
 map::insert_norehash( position p, unsigned int i )
 {
     std::pair< unsigned int *, bool > ret_type;
-    size_t term = abs((int) p.hash())  % getnrbuckets();
+    size_t term = abs((int) p.hash())  % buckets.size();
     for (auto &k : buckets[term]) {
         if (p == k.first) {
             ret_type.first = &k.second;
             ret_type.second = false;
             return ret_type;
         }
-
     }
     buckets[term].push_back(std::make_pair( p, i ));
-    map_size++;
     for (auto &k : buckets[term]) {
         if (p == k.first) {
+            map_size++;
             ret_type.first = &k.second;
             ret_type.second = true;
             return ret_type;
         }
     }
-    ret_type.first = nullptr;
-    ret_type.second = false;
-    return ret_type;
 }
 
 
@@ -118,34 +113,32 @@ void map::rehash( size_t newbucketsize )
 {
     if( newbucketsize < 4 ) newbucketsize = 4;
     std::vector< buckettype > newbuckets( newbucketsize );
-    size_t perm = map_size;
-    std::swap(newbuckets, buckets);
-    for (auto k : newbuckets) {
+    for (auto k : buckets) {
         for (auto z : k) {
-            insert_norehash(z.first,z.second);
+            newbuckets[z.first.hash() % newbucketsize].push_back(std::make_pair( z.first, z.second ));
         }
     }
-    map_size = perm;
-    newbuckets.clear();
+    buckets.clear();
+    std::swap(newbuckets, buckets);
 }
 
 
 std::pair< unsigned int* , bool >
 map::insert_rehash( position p, unsigned int i )
 {
-    std::pair< unsigned int* , bool >  ret_type;
-    ret_type = insert_norehash( p, i ) ;
-    if(ret_type.second) {
-        if(map_size/buckets.size() > max_load_factor) {
-            rehash(buckets.size() * 2);
-            ret_type.first = lookup(p);
-            ret_type.second = true;
-            return ret_type;
-        }
+    std::pair< unsigned int* , bool > novpara ;
+    novpara = insert_norehash(  p,  i ) ;
+    if(novpara.second) {
+        if((double)map_size/buckets.size() > max_load_factor){
+            rehash(buckets.size()*2);
+            novpara.first = lookup(p);
+            novpara.second = true;
+            return novpara;
+        } else return novpara;
     } else  {
-        ret_type.first = lookup(p);
-        ret_type.second = false;
-        return ret_type;
+        novpara.first = lookup(p);
+        novpara.second = false;
+        return novpara;
     }
 }
 
@@ -153,8 +146,8 @@ map::insert_rehash( position p, unsigned int i )
 map::map( std::initializer_list< std::pair< position, unsigned int >> init )
         : map( )
 {
-    for(auto k : init){
-        insert_rehash(k.first, k.second);
+    for(auto tt : init){
+        insert_rehash(tt.first, tt.second);
     }
 }
 

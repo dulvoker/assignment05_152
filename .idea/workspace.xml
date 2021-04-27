@@ -27,9 +27,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="Task 9 (rehashing)">
+    <list default="true" id="edc3d29b-e6db-45e2-8fde-77521943895d" name="Default Changelist" comment="finished!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/position.h" beforeDir="false" afterPath="$PROJECT_DIR$/position.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/submit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/submit.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +57,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -74,7 +75,7 @@
       <workItem from="1619168301396" duration="10156000" />
       <workItem from="1619253410816" duration="819000" />
       <workItem from="1619328957921" duration="505000" />
-      <workItem from="1619355304110" duration="17367000" />
+      <workItem from="1619355304110" duration="29340000" />
     </task>
     <task id="LOCAL-00001" summary="task 1">
       <created>1619036343009</created>
@@ -146,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619432538010</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="finished!!!">
+      <created>1619441326313</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1619441326313</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +183,8 @@
     <MESSAGE value="task 4 (norehas()) ; // Completed task 4, though mentioned some mistakes with the task 3 (improved brackets)&#10;&#10;!!! MODIFIED ITERATIONS THROUGH THE VECTORS" />
     <MESSAGE value="every task until 8" />
     <MESSAGE value="Task 9 (rehashing)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 9 (rehashing)" />
+    <MESSAGE value="finished!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619094186389">
@@ -198,6 +207,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="522" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1619358737550" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1619441218876">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1619441218876" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1619434643580">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
